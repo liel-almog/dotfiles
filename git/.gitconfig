@@ -1,0 +1,10 @@
+[user]
+	email = liel.almogg@gmail.com
+	name = Liel Almog
+	signingkey = 1D8C94A0EF97C8C9
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
+[init]
+	defaultBranch = main
