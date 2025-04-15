@@ -10,3 +10,5 @@
 	defaultBranch = main
 [alias]
 	switch-pattern = "!f() { git switch $(git branch | grep \"$1\" | sed \"s/^..//\"); }; f"
+[push]
+	autoSetupRemote = true
