@@ -10,5 +10,11 @@
 	defaultBranch = main
 [alias]
 	switch-pattern = "!f() { git switch $(git branch | grep \"$1\" | sed \"s/^..//\"); }; f"
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+	last = log -1 HEAD
 [push]
 	autoSetupRemote = true
