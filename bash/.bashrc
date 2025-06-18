@@ -46,7 +46,7 @@ alias nowdate="date +\"%d-%m-%Y\""
 alias ports="netstat -tulanp"
 
 # Updates
-alias update="dnf -y check-update && sudo dnf -y upgrade"
+alias update="dnf5 -y check-update && sudo dnf -y upgrade"
 
 # File Creation
 alias mkfile='function _mkfile(){ mkdir -p "$(dirname "$1")" && touch "$1"; }; _mkfile'
@@ -60,6 +60,11 @@ fi
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
+
+alias bathelp='bat --plain --language=help'
+help() {
+    "$@" --help 2>&1 | bathelp
+}
 
 
 #######################################################

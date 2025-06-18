@@ -16,5 +16,6 @@
 	st = status
 	unstage = reset HEAD --
 	last = log -1 HEAD
+	sw = switch
 [push]
 	autoSetupRemote = true
